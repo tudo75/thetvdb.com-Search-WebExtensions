@@ -1,4 +1,4 @@
-# thetvdb.com-Search-WebExtensions
+# thetvdb.com-Search-WebExtension
 thetvdb.com Search WebExtension for Firefox
 
 

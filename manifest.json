@@ -2,6 +2,11 @@
 
   "manifest_version": 2,
   "name": "TheTVDB",
+  "author": "tudo75",
+  "developer": {
+    "name": "tudo75",
+    "url": "http://github.com/tudo75/"
+  },
   "version": "1.0",
 
   "description": "TheTVDB.com Search WebExtension for Firefox",
@@ -11,14 +16,30 @@
     "48": "icons/thetvdb-48.png",
     "64": "icons/thetvdb-64.png"
   },
+  
+  "web_accessible_resources": [
+    "icons/thetvdb-16.png"
+  ],
 
   "chrome_settings_overrides": {
     "search_provider": {
-      "name": "TheTVDB",
+      "name": "TheTVDB Search",
       "search_url": "https://www.thetvdb.com/search?menu[type]=TV&query={searchTerms}",
       "encoding": "UTF-8",
       "favicon_url": "https://raw.githubusercontent.com/tudo75/thetvdb.com-Search-WebExtensions/master/icons/favicon.ico"
     }
-  }
+  },
+  
+  "applications": {
+    "gecko": {
+      "strict_min_version": "65.0"
+  	}
+  },
+
+  "permissions": [
+	"*://*.thetvdb.com/*",
+    "webRequest",
+    "webRequestBlocking"
+  ]
 
 }
